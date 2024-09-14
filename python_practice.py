@@ -1,2 +1,2 @@
-a,b,c = input().split(':')
-print(b)
+y, m, d = input().split('.')
+print(d+"-"+m+"-"+y)
