@@ -1,3 +1,6 @@
-a = int(input())
+a,b = input().split()
 
-print( not bool(a))
+a = int(a)
+b = int(b)
+
+print(bool(a) and bool(b))
