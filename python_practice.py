@@ -1,4 +1,6 @@
-a = input()
-a = int(a)
+a,b = input().split()
 
-print(a<<1)
+a = int(a)
+b = int(b)
+
+print(a<<b)
