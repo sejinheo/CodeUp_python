@@ -1,5 +1,4 @@
 a,b = input().split()
 
-c = float(a)** float(b)
-
+c = int(a) // int(b)
 print(c)
