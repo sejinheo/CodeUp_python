@@ -1,4 +1,5 @@
-a,b = input().split()
+a = input()
 
-c = int(a) % int(b)
-print(c)
+a = float(a)
+
+print(format(a,".2f"))
