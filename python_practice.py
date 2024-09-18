@@ -1,10 +1,8 @@
-a,b=input().split()
-a=int(a)
-b=int(b)
-print(a+b)
-print(a-b)
-print(a*b)
-print(a//b)
-print(a%b)
-c = a/b
-print(format(c,".2f"))
+a,b,c = input().split()
+
+a = int(a)
+b = int(b)
+c = int(c)
+sum = a+b+c
+print(sum)
+print(format(sum/3,".2f"))
