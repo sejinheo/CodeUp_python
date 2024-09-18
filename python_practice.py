@@ -1,5 +1,6 @@
-a = input()
+a,b= input().split()
 
-a = float(a)
 
-print(format(a,".2f"))
+c = float(a) / float(b)
+
+print(format(c,".3f"))
