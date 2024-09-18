@@ -1,5 +1,3 @@
-a,b = input().split()
+str,i = input().split()
 
-c = float(a) * float(b)
-
-print(c)
+print(str*int(i))
