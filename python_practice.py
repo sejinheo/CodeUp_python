@@ -1,8 +1,4 @@
-a,b,c = input().split()
-
+a = input()
 a = int(a)
-b = int(b)
-c = int(c)
-sum = a+b+c
-print(sum)
-print(format(sum/3,".2f"))
+
+print(a<<1)
