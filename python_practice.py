@@ -1,4 +1,4 @@
-a = ord(input())
-a = a + 1
+a,b = input().split()
 
-print(chr(a))
+c = int(a) -int(b)
+print(c)
