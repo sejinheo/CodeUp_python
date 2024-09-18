@@ -1,4 +1,3 @@
-a = float(input())
-b = float(input())
+a = hex(int(input()))
 
-print(a+b)
+print(a[2:])
