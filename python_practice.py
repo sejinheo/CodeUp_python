@@ -1,6 +1,10 @@
-a,b= input().split()
-
-
-c = float(a) / float(b)
-
-print(format(c,".3f"))
+a,b=input().split()
+a=int(a)
+b=int(b)
+print(a+b)
+print(a-b)
+print(a*b)
+print(a//b)
+print(a%b)
+c = a/b
+print(format(c,".2f"))
