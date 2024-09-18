@@ -1,3 +1,3 @@
-a = hex(int(input()))
-
-print(a[2:])
+a=input()
+a=int(a)
+print("%X"%a)
