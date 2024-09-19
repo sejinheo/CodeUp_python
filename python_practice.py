@@ -1,6 +1,10 @@
-a,b = input().split()
+a,b,c = input().split()
 
 a = int(a)
 b = int(b)
+c = int(c)
 
-print( a if (a>=b) else b)
+min1 = a if(a<b) else b
+min2 = min1 if(min1 < c) else c
+
+print(min2)
