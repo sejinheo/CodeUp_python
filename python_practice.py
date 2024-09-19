@@ -3,8 +3,11 @@ a,b,c = input().split()
 a = int(a)
 b = int(b)
 c = int(c)
+if a%2==0:
+  print(a)
 
-min1 = a if(a<b) else b
-min2 = min1 if(min1 < c) else c
+if b%2==0:
+  print(b)
 
-print(min2)
+if c%2==0:
+  print(c)
