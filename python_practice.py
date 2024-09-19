@@ -1,20 +1,14 @@
-a,b,c = input().split()
+a =input()
 
-a=int(a)
-b=int(b)
-c=int(c)
+a = int(a)
 
-if a%2==0:
-    print("even")
-else:
-    print("odd")
-        
-if b%2==0:
-    print("even")
-else:
-    print("odd")
-        
-if c%2==0:
-    print("even")
-else:
-    print("odd")
+if a<0:
+    if a%2==0:
+        print('A')
+    else:
+        print('B')
+if a>0:
+    if a%2==0:
+        print('C')
+    else:
+        print('D')
