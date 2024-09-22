@@ -1,9 +1,12 @@
-a = int(input())
+r,g,b = input().split()
 
-for i in range(1, a+1):
-    
-    if (i % 10 == 3 or i % 10 == 6 or i % 10 == 9):
-        print("X", end=' ')
-        
-    else:
-        print(i, end=' ')
+r = int(r)
+g = int(g)
+b = int(b)
+check = 0
+for i in range(0, r):
+  for j in range(0, g):
+    for k in range(0, b):
+      print(i, j, k)
+      check = check+1
+print(check)
