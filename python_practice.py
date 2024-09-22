@@ -1,12 +1,10 @@
-r,g,b = input().split()
+a,b,c,d = input().split()
 
-r = int(r)
-g = int(g)
+a = int(a)
 b = int(b)
-check = 0
-for i in range(0, r):
-  for j in range(0, g):
-    for k in range(0, b):
-      print(i, j, k)
-      check = check+1
-print(check)
+c = int(c)
+d = int(d)
+
+e = a*b*c*d/8/1024/1024
+print(round(e,1) )
+print("MB")
