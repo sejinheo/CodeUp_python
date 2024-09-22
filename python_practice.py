@@ -1,6 +1,7 @@
 a = input()
-check = ord('a')
-a = ord(a)
-while check <=a:
-    print(chr(check) )
-    check = check+1
+
+a = int(a)
+b = 0
+while b <=a:
+    print(b)
+    b = b+1
