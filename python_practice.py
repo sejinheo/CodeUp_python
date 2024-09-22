@@ -1,7 +1,10 @@
-a = input()
+a = int(input()) 
 
-a = int(a)
-b = 0
-while b <=a:
-    print(b)
-    b = b+1 
+b = 2  
+sum = 0
+
+while b <= a:
+    sum += b
+    b += 2
+
+print(sum)
