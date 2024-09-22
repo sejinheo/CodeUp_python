@@ -1,7 +1,10 @@
+a = int(input())
+check = 0
+sum = 0
 while 1:
-    a = input()
-    
-    print(a)
-    
-    if (a == 'q'):
+    if sum >= a:
         break
+    check = check + 1
+    sum = sum+check
+        
+print(check)
