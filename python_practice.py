@@ -1,10 +1,4 @@
-a,b,c,d = input().split()
+w,h,b = input().split()
+a=int(w)*int(h)*int(b)/1024/1024/8
 
-a = int(a)
-b = int(b)
-c = int(c)
-d = int(d)
-
-e = a*b*c*d/8/1024/1024
-print(round(e,1) )
-print("MB")
+print('%.2f'%a,"MB")
