@@ -1,4 +1,10 @@
-w,h,b = input().split()
-a=int(w)*int(h)*int(b)/1024/1024/8
-
-print('%.2f'%a,"MB")
+a = input()
+a = int(a)
+check = 1
+sum = 0
+while 1:
+    sum = sum + check
+    check = check + 1 
+    if(sum >= a):
+        break
+print(sum)
