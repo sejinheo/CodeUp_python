@@ -1,6 +1,11 @@
-a = input()
-a = int(a)
-for i in range(1, a+1) :
-  if i%3==0:
-    continue            
-  print(i, end=' ')
+a,d,n=input().split()
+
+a=int(a)
+d=int(d)
+n=int(n)
+
+s=a
+for i in range(2, n+1):
+   s+=d
+
+print(s)
