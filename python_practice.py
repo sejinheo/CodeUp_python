@@ -1,11 +1,11 @@
-a, m, d, n = input().split()
+a, b, c = input().split()
 
 a = int(a)
-m = int(m)
-d = int(d)
-n = int(n)
+b = int(b)
+c = int(c)
 
-for i in range(1, n) :
-  a = a*m+d
+d = 1
+while d%a!=0 or d%b!=0 or d%c!=0 :
+  d += 1
 
-print(a)
+print(d)
