@@ -1,11 +1,15 @@
-a, b, c = input().split()
+n = int(input())
+a = input().split()
 
-a = int(a)
-b = int(b)
-c = int(c)
+for i in range(n) :
+  a[i] = int(a[i])
 
-d = 1
-while d%a!=0 or d%b!=0 or d%c!=0 :
-  d += 1
+d = []
+for i in range(24) :
+  d.append(0)
 
-print(d)
+for i in range(n) :
+  d[a[i]] += 1
+
+for i in range(1, 24) :
+  print(d[i], end=' ')
