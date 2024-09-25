@@ -1,31 +1,24 @@
-d=[]
-for i in range(20) :
-  d.append([])
-  for j in range(20) : 
-    d[i].append(0)
+h,w = input().split()
+h = int(h)
+w = int(w)
 
-for i in range(19) :
-  a = input().split()
-  for j in range(19) :
-    d[i+1][j+1] = int(a[j])
+m = []
+for i in range(h+1) :
+  m.append([])
+  for j in range(w+1) :
+    m[i].append(0)
 
 n = int(input())
 for i in range(n) :
-  x,y=input().split()
-  x=int(x)
-  y=int(y)
-  for j in range(1, 20) :
-    if d[j][y]==0 :
-      d[j][y]=1
-    else :
-      d[j][y]=0
+  l,d,x,y = input().split()
+  if int(d)==0 :
+    for j in range(int(l)) :
+      m[int(x)][int(y)+j] = 1
+  else :
+    for j in range(int(l)) :
+      m[int(x)+j][int(y)] = 1
 
-    if d[x][j]==0 :
-      d[x][j]=1
-    else :
-      d[x][j]=0
-
-for i in range(1, 20) :
-  for j in range(1, 20) :
-    print(d[i][j], end=' ')
+for i in range(1, h+1) :
+  for j in range(1, w+1) :
+    print(m[i][j], end=' ')
   print()
