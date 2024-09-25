@@ -1,8 +1,11 @@
-a,r,n = input().split()
+a, m, d, n = input().split()
 
 a = int(a)
-r = int(r)
+m = int(m)
+d = int(d)
 n = int(n)
+
 for i in range(1, n) :
-  a = a*r
+  a = a*m+d
+
 print(a)
