@@ -1,24 +1,33 @@
-h,w = input().split()
-h = int(h)
-w = int(w)
-
-m = []
-for i in range(h+1) :
+m=[]
+for i in range(12) :
   m.append([])
-  for j in range(w+1) :
+  for j in range(12) :
     m[i].append(0)
 
-n = int(input())
-for i in range(n) :
-  l,d,x,y = input().split()
-  if int(d)==0 :
-    for j in range(int(l)) :
-      m[int(x)][int(y)+j] = 1
-  else :
-    for j in range(int(l)) :
-      m[int(x)+j][int(y)] = 1
+for i in range(10) :
+  a=input().split()
+  for j in range(10) :
+    m[i+1][j+1]=int(a[j])
 
-for i in range(1, h+1) :
-  for j in range(1, w+1) :
+x = 2
+y = 2
+while True :
+  if m[x][y] == 0 :
+    m[x][y] = 9
+  elif m[x][y] == 2 :
+    m[x][y] = 9
+    break
+
+  if (m[x][y+1]==1 and m[x+1][y]==1) or (x==9 and y==9) :
+    break
+
+  if m[x][y+1] != 1 :
+    y += 1
+  elif m[x+1][y] != 1 :
+    x += 1
+    
+
+for i in range(1, 11) :
+  for j in range(1, 11) :
     print(m[i][j], end=' ')
   print()
